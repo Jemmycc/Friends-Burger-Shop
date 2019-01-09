@@ -1,0 +1,64 @@
+<header>
+</header>
+
+<div class="container-fluid">
+    <div class="row" id="clearfix">
+
+        <div class="top-banner"></div>
+
+        <div class="col-md-7">
+            <span>
+                <ul>
+                    {{#each burgers}}
+                    {{#unless this.devoured}}
+                    <li>
+                        <p>{{this.id}}. {{this.burger_name}}</p>
+                        <button data-id="{{this.id}}" class="devourburger">DEVOUR</button>
+                    </li>
+                    {{/unless}}
+                    {{/each}}
+                </ul>
+
+                <div id="middle-banner"></div>
+
+                <ul>
+                    {{#each burgers}}
+                    {{#if this.devoured}}
+                    <li>
+                        <p>{{this.id}}. {{this.burger_name}}</p>
+                    </li>
+                    {{/if}}
+                    {{/each}}
+                </ul>
+
+            </span>
+        </div>
+
+        <div class="col-md-1"></div>
+
+        <div class="col-md-4">
+            <section id="add-area">
+                <div id="wrapper">
+                    <div id="add-name"> What burger would you like:</div>
+                    <form id="addburger" class="button-size">
+                        <textarea type="text" id="input-area" name="burger"></textarea>
+                        <button class="input-btn" id="add-user" type="submit">Add</button>
+                    </form>
+                </div>
+            </section>
+            <div class="best-text3">Super</div>
+            <div class="best-text">Good Friends</div>
+            <div class="best-text2">BURGER SHOP</div>
+
+        </div>
+        <footer>
+            <div class="row" id="clearfix">
+
+                <div class="footer-text">OPEN 11 AM to 12 PM 7 DAYS A WEEK</div>
+                <div class="footer-text2">Please follow us at <i class="fab fa-facebook-square"></i>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</div>

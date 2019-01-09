@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: rgb(75, 73, 73);
+    background-image: url("../img/bg03.jpg");
+}
+
+#clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*header area*/
+header {
+    margin-bottom: 15px;
+    background-color: rgb(26, 25, 25);
+    text-align: center;
+    background-image: url("../img/3.jpg");
+    background-repeat: no-repeat; 
+    background-size: auto;
+    background-position: center; 
+    height: 350px;
+}
+
+.top-banner {
+    margin-top: -20px;
+    border-top: 25px solid transparent;
+    -webkit-border-image:  url(../img/border.png) round; /* Safari 3.1-5 */
+    -o-border-image: url(../img/border.png) round; /* Opera 11-12.1 */
+    border-image: url(../img/border.png) round;
+    border-image-slice: 20%; 
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+/*add burger*/
+#wrapper {
+  width: 500px;
+  margin: 25px auto;
+  height: 500px;
+}
+
+#add-area {
+    color:  rgb(49, 49, 49);
+    box-shadow: 10px 10px grey;  
+    position: fixed;
+    top: 480px;
+    right: 90px;
+    width: 400px;
+    height: 20px;
+    border-bottom: 190px solid rgb(245, 241, 241);
+    transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg); /* IE 9 */
+    -webkit-transform: rotate(-5deg); /* Safari and Chrome */
+    cursor:pointer;
+}
+
+#add-name {
+    font-size: 25px;
+    font-weight: bolder;
+    letter-spacing: 1.5px;
+    margin-left: 5px;
+    text-align: left;
+    padding-top: 15px;
+    padding-left: 32px;
+    padding-bottom: 5px;
+    font-family: 'Lobster', cursive;
+}
+
+#input-area {
+    color:  rgb(92, 90, 90);
+    background-color: rgb(235, 235, 235);
+    width: 250px;
+    height: 40px;
+    margin-top: 4px;
+    margin-left: 40px;
+    font-size: 20px;
+    font-family: 'Sarabun', sans-serif;
+    padding-left: 15px;
+}
+
+.input-btn {
+    width : 80px;
+    height: 41px;
+    margin-top: 6px;
+    margin-left: 2px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 15px; 
+    font-size: 17px;    
+}
+
+.input-btn:hover {
+    color: rgb(228, 104, 3);
+}
+
+
+/*menu*/
+ul {
+    float: left;
+    position: relative;
+}
+li {
+    padding: 5px;
+    margin: 20px;
+    width: 250px;
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    background-image: url("../img/bg01.jpg");
+    border-radius: 16px;
+    border: 7px solid rgb(87, 69, 58);
+    border-style: outset;
+}
+
+.col-md-7 {
+    float: left;
+    position: relative;
+    margin-right: 500px;
+}
+
+.col-md-4 {
+    float: left;
+    position: relative;
+}
+
+button{
+    font-size: 12px;
+    font-weight: bolder;
+    margin: 2px 5px 5px 80px;
+    padding: 2px 25px;
+    background-color: rgb(247, 167, 63);
+    color: rgb(252, 227, 227);
+    letter-spacing: 1px;
+}
+
+p {
+    font-family: 'Sarabun', sans-serif;
+    line-height: 1.6;
+    letter-spacing: 1.8px;
+    font-size: 20px; 
+    color: #777;
+    letter-spacing: 1.2px;
+}
+
+#middle-banner {
+    size: 10px solid transparent;
+    padding: 30px;
+    content: url("../img/border3.png");
+    margin-left: 500px;
+}
+
+/*final text*/
+.best-text {
+    font-family: 'Homemade Apple', cursive;
+    letter-spacing: 1.8px;
+    font-size: 70px; 
+    margin-left: 900px;
+    margin-top: -130px;
+    color: rgb(158, 149, 149);
+}
+
+.best-text2 {
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 6px;
+    font-size: 25px; 
+    margin-left: 1200px;
+    margin-top: -55px;
+    margin-bottom: 45px;
+    color: rgb(158, 149, 149);
+}
+
+.best-text3 {
+   font-family: 'Homemade Apple', cursive;
+    letter-spacing: 5px;
+    font-size: 36px; 
+    margin-left: 992px;
+    margin-top: -110px;
+    margin-bottom: 69px;
+    color: rgb(158, 149, 149);
+}
+
+/*footer*/
+footer {
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 2px;
+    background: rgb(26, 25, 25);
+    color: #ccc;
+    font-size: 15px;
+    letter-spacing: 2px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin-top: 30px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;   
+}
+
+.footer-text{
+    position: relative;
+    float: left;
+    padding-left: 20px;
+}
+
+.footer-text2{
+    position: relative;
+    float: right;
+    padding-right: 20px;
+}
