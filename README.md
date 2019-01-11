@@ -11,7 +11,7 @@ The app lets a user input names of burgers they'd like to eat, and keeps track o
 *	The app maintains all the burgers in a database, whether they've been devoured or not.
 
 ## Demo 
-* The app is deployed to Heroku. Please click [here](https://burger-shop-miya0119.herokuapp.com/).
+* The app is deployed to Heroku. Please click [here](https://friends-burger-shop-miya010819.herokuapp.com/burgers).
 
 ## Development Details
 *	Install the express package - web framework to make connection between the back end and the front end. The installation command is: “npm install express.”
